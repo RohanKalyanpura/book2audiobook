@@ -1,0 +1,32 @@
+{
+  "openai": {
+    "model": "gpt-4o-mini-tts",
+    "voices": ["alloy", "verse", "sage", "nova"],
+    "max_chars": 3500,
+    "retries": 4
+  },
+  "openrouter": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "model": "openai/gpt-audio-mini",
+    "voices": ["alloy", "verse", "sage", "nova"],
+    "max_chars": 3500,
+    "retries": 4,
+    "stream_pcm_sample_rate_hz": 24000,
+    "app_name": "Book2Audiobook",
+    "app_url": ""
+  },
+  "kokoro": {
+    "model_url": "",
+    "model_sha256": "",
+    "model_filename": "kokoro-v1_0.pth",
+    "runtime_preference": "modern",
+    "device": "auto",
+    "device_index": "",
+    "gpu_preference": "discrete",
+    "cpu_threads": "auto",
+    "require_gpu_confirm_on_cpu_fallback": true,
+    "voices": ["af_bella", "af_nicole"],
+    "max_chars": 2200,
+    "modern_max_chars": 12000
+  }
+}
